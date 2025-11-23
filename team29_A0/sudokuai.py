@@ -7,6 +7,10 @@ import time
 from competitive_sudoku.sudoku import GameState, Move, SudokuBoard, TabooMove
 import competitive_sudoku.sudokuai
 
+# Functions to define:
+#   - legal move checker and other rules should be in def possible()
+#   - compute best move should check for the heuristic score that lets the player choose the best move in the tree (min max tree should be implemented for this)
+
 
 class SudokuAI(competitive_sudoku.sudokuai.SudokuAI):
     """
